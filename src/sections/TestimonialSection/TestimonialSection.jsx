@@ -68,7 +68,7 @@ function TestimonialSection() {
 
 	return (
 		<section>
-			<Typography variant="h1" align="center">
+			<Typography id="kundenmeinung" variant="h1" align="center">
 				Dass sagen meine Kunden:
 			</Typography>
 			<Box>

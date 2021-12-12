@@ -28,7 +28,7 @@ function HeroSection() {
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
 							dolor. Aenean massa. Cum sociis natoque penatibus et.
 						</Typography>
-						<CustomButton color="secondary" anker="leistung" text="Meine Leistung" />
+						<CustomButton anker="leistung" text="Meine Leistung" />
 					</Box>
 				</Box>
 			</div>

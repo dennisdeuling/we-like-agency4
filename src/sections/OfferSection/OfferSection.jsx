@@ -6,7 +6,7 @@ import CustomButton from '../../components/CustomButton';
 function SolutionSection() {
 	return (
 		<section>
-			<Typography variant="h1" align="center">
+			<Typography id="leistung" variant="h1" align="center">
 				Meine Leistungen im Detail:
 			</Typography>
 			<Box display="flex" flexWrap="wrap" justifyContent="space-around">
@@ -14,7 +14,7 @@ function SolutionSection() {
 				<CustomCard />
 				<CustomCard />
 			</Box>
-			<CustomButton color="secondary" anker="kontakt" text="Jetzt anfragen" />
+			<CustomButton anker="kontakt" text="Jetzt anfragen" />
 		</section>
 	);
 }

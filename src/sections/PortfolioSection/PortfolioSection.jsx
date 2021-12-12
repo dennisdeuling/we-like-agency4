@@ -6,7 +6,7 @@ import CustomButton from '../../components/CustomButton';
 function PortfolioSection() {
 	return (
 		<section>
-			<Typography variant="h1" align="center">
+			<Typography id="projekte" variant="h1" align="center">
 				Meine bisherigen Projekte:
 			</Typography>
 			<Box display="flex" flexWrap="wrap" justifyContent="space-around">
@@ -14,7 +14,7 @@ function PortfolioSection() {
 				<CustomCard />
 				<CustomCard />
 			</Box>
-			<CustomButton color="secondary" anker="kontakt" text="Jetzt anfragen" />
+			<CustomButton anker="kontakt" text="Jetzt anfragen" />
 		</section>
 	);
 }

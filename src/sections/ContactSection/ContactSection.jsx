@@ -28,7 +28,7 @@ function ContactSection() {
 	return (
 		<section>
 			<form>
-				<Typography variant="h1" align="center">
+				<Typography id="kontakt" variant="h1" align="center">
 					Kontakt
 				</Typography>
 				<Box display="flex" flexDirection="column" justifyContent="center" alignItems="center">
@@ -53,7 +53,6 @@ function ContactSection() {
 
 					<CustomButton
 						variant="contained"
-						color="secondary"
 						text="Jetzt absenden"
 						aria-label="Jetzt absenden"
 						size="large"

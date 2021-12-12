@@ -10,14 +10,14 @@ const useStyles = makeStyles({
 		margin: '15px'
 	}
 });
-function CustomButton({ color, anker, text }) {
+function CustomButton({ anker, text }) {
 	const classes = useStyles();
 	return (
 		<Box display="flex" justifyContent="center">
 			<Button
 				className={classes.root}
 				variant="contained"
-				color={color}
+				color="primary"
 				href={`#${anker}`}
 				aria-label={text}
 				size="large"

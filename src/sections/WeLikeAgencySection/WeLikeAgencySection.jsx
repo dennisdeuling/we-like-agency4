@@ -20,7 +20,7 @@ function WeLikeAgencySection() {
 		<section>
 			<Grid container justifyContent="center" alignItems="center">
 				<Grid item xs={12} md={12} lg={12}>
-					<Typography variant="h1" align="center">
+					<Typography id="welikeagency" variant="h1" align="center">
 						#welikeagency
 					</Typography>
 				</Grid>
@@ -41,7 +41,7 @@ function WeLikeAgencySection() {
 						feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
 						Aenean imperdiet.
 					</Typography>
-					<CustomButton color="secondary" anker="kontakt" text="Jetzt Kontakt aufnehmen" />
+					<CustomButton anker="kontakt" text="Jetzt Kontakt aufnehmen" />
 				</Grid>
 			</Grid>
 		</section>

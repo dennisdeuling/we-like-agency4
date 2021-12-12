@@ -23,7 +23,7 @@ function OfferSection() {
 	const classes = useStyles();
 	return (
 		<section>
-			<Typography variant="h1" align="center">
+			<Typography id="vorteile" variant="h1" align="center">
 				Die Lösung die ich Ihnen biete:
 			</Typography>
 			<Box
