@@ -6,7 +6,7 @@ const useStyles = makeStyles({
 	root: {
 		color: 'white',
 		fontWeight: 800,
-		fontSize: '24px',
+		fontSize: '1.5em',
 		margin: '15px'
 	}
 });
@@ -21,6 +21,7 @@ function CustomButton({ color, anker, text }) {
 				href={`#${anker}`}
 				aria-label={text}
 				size="large"
+				align="center"
 			>
 				{text}
 			</Button>

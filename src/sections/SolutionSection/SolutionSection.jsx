@@ -14,7 +14,7 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
 	subhead: {
 		fontFamily: 'Dosis',
-		fontSize: '2em',
+		fontSize: '1.5em',
 		margin: '10px 20px 20px 20px'
 	}
 });

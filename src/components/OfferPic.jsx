@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Typography } from '@mui/material';
 function OfferPic({ icon, text }) {
 	return (
 		<React.Fragment>

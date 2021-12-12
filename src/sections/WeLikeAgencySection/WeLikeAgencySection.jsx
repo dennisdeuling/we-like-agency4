@@ -1,13 +1,13 @@
 import React from 'react';
-import { Typography, Box } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 import WeLikeAgencyImage from '../../assets/images/we-like-agency.jpg';
 import CustomButton from '../../components/CustomButton';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
 	image: {
-		maxWidth: '40%',
-		margin: '10px 20px 0px 20px'
+		maxWidth: '100%'
+		// margin: '10px 20px 0px 20px'
 	},
 	text: {
 		margin: '10px 20px 0px 20px'
@@ -18,13 +18,17 @@ function WeLikeAgencySection() {
 	const classes = useStyles();
 	return (
 		<section>
-			<Typography variant="h1" align="center">
-				#welikeagency
-			</Typography>
-			<Box display="flex" justifyContent="center" alignItems="center">
-				{/*<div className={classes.image}></div>*/}
-				<img className={classes.image} src={WeLikeAgencyImage} />
-				<Box>
+			<Grid container justifyContent="center" alignItems="center">
+				<Grid item xs={12} md={12} lg={12}>
+					<Typography variant="h1" align="center">
+						#welikeagency
+					</Typography>
+				</Grid>
+				<Grid item xs={12} md={6} lg={6} alignSelf="flex-start">
+					{/*<div className={classes.image}></div>*/}
+					<img className={classes.image} src={WeLikeAgencyImage} />
+				</Grid>
+				<Grid item xs={12} md={6} lg={6}>
 					<Typography className={classes.text} variant="body1">
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
 						dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -38,8 +42,8 @@ function WeLikeAgencySection() {
 						Aenean imperdiet.
 					</Typography>
 					<CustomButton color="secondary" anker="kontakt" text="Jetzt Kontakt aufnehmen" />
-				</Box>
-			</Box>
+				</Grid>
+			</Grid>
 		</section>
 	);
 }

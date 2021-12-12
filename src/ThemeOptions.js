@@ -16,22 +16,22 @@ const theme = createTheme({
 	typography: {
 		h1: {
 			fontFamily: 'Vidaloka',
-			fontSize: '4em',
+			fontSize: '2em',
 			color: '#B09CDB',
 			fontWeight: 800,
 			margin: '30px 0px 10px 0px'
 		},
 		h2: {
 			fontFamily: 'Vidaloka',
-			fontSize: '3em'
+			fontSize: '1.5em'
 		},
 		h3: {
 			fontFamily: 'Vidaloka',
-			fontSize: '2em'
+			fontSize: '1.5em'
 		},
 		h4: {
 			fontFamily: 'Vidaloka',
-			fontSize: '1.5em'
+			fontSize: '1em'
 		},
 		h5: {
 			fontFamily: 'Vidaloka',
@@ -49,7 +49,7 @@ const theme = createTheme({
 		},
 		body1: {
 			fontFamily: 'Dosis',
-			fontSize: '1.2em'
+			fontSize: '1em'
 		},
 		body2: {
 			fontFamily: 'Dosis',

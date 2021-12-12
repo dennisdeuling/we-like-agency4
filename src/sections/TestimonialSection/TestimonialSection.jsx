@@ -29,16 +29,18 @@ const data = [
 
 const useStyles = makeStyles({
 	image: {
-		borderRadius: '50%'
+		borderRadius: '50%',
+		maxWidth: '60%',
+		margin: '1em 0em 2em 0em'
 	},
 	text: {
 		width: '80%',
 		textAlign: 'center'
 	},
 	caret: {
-		fontSize: '5em',
+		fontSize: '4em',
 		color: '#B09CDB',
-		margin: '0px 150px 0px 150px',
+		margin: '-0.3em 0.5em 0em 0.5em',
 		cursor: 'pointer'
 	}
 });
