@@ -1,15 +1,15 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
-import HeroImage from '../../assets/images/hero-image.jpg';
 import CustomButton from '../../components/CustomButton';
 
-function HeroSection() {
+function HeroSection({ ...props }) {
+	const { title, image, subtitle } = props.content;
 	return (
 		<section>
 			<div
 				style={{
 					height: '850px',
-					backgroundImage: `url(${HeroImage})`,
+					backgroundImage: `url(${image})`,
 					backgroundRepeat: 'no-repeat',
 					backgroundSize: 'cover'
 				}}
@@ -23,11 +23,8 @@ function HeroSection() {
 					alignItems="center"
 				>
 					<Box style={{ width: '650px' }}>
-						<Typography variant="h1">Lorem ipsum dolor sit amet.</Typography>
-						<Typography variant="h3">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-							dolor. Aenean massa. Cum sociis natoque penatibus et.
-						</Typography>
+						<Typography variant="h1">{title}</Typography>
+						<Typography variant="h3">{subtitle}</Typography>
 						<CustomButton anker="leistung" text="Meine Leistung" />
 					</Box>
 				</Box>

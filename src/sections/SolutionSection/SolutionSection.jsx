@@ -19,12 +19,13 @@ const useStyles = makeStyles({
 	}
 });
 
-function OfferSection() {
+function OfferSection({ ...props }) {
 	const classes = useStyles();
+	const { title, icons } = props.content;
 	return (
 		<section>
 			<Typography id="vorteile" variant="h1" align="center">
-				Die Lösung die ich Ihnen biete:
+				{title}
 			</Typography>
 			<Box
 				display="flex"
@@ -33,42 +34,52 @@ function OfferSection() {
 				justifyContent="center"
 				alignItems="center"
 			>
-				<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>
-					<OfferPic icon={faCoins} />
-					<Typography className={classes.subhead} variant="h3" align="center">
-						Mehr Umsatz durch eine klare Strategie
-					</Typography>
-				</Box>
-				<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>
-					<OfferPic icon={faEye} />
-					<Typography className={classes.subhead} variant="h3" align="center">
-						Mehr Sichtbarkeit durch visuelles Branding
-					</Typography>
-				</Box>
-				<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>
-					<OfferPic icon={faChartLine} />
-					<Typography className={classes.subhead} variant="h3" align="center">
-						Mehr Traffic durch relevante Inhalte
-					</Typography>
-				</Box>
-				<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>
-					<OfferPic icon={faMousePointer} />
-					<Typography className={classes.subhead} variant="h3" align="center">
-						Mehr Interaktion durch kreative Formate
-					</Typography>
-				</Box>
-				<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>
-					<OfferPic icon={faUsers} />
-					<Typography className={classes.subhead} variant="h3" align="center">
-						Mehr Neukunden durch gezielte und kreative Werbung
-					</Typography>
-				</Box>
-				<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>
-					<OfferPic icon={faBusinessTime} />
-					<Typography className={classes.subhead} variant="h3" align="center">
-						Sie erhalten mehr Zeit für Ihr Business
-					</Typography>
-				</Box>
+				{icons.map(icon => {
+					return (
+						<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>
+							<OfferPic icon={icon.icon} />
+							<Typography className={classes.subhead} variant="h3" align="center">
+								{icon.text}
+							</Typography>
+						</Box>
+					);
+				})}
+				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
+				{/*	<OfferPic icon={faCoins} />*/}
+				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
+				{/*		Mehr Umsatz durch eine klare Strategie*/}
+				{/*	</Typography>*/}
+				{/*</Box>*/}
+				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
+				{/*	<OfferPic icon={faEye} />*/}
+				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
+				{/*		Mehr Sichtbarkeit durch visuelles Branding*/}
+				{/*	</Typography>*/}
+				{/*</Box>*/}
+				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
+				{/*	<OfferPic icon={faChartLine} />*/}
+				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
+				{/*		Mehr Traffic durch relevante Inhalte*/}
+				{/*	</Typography>*/}
+				{/*</Box>*/}
+				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
+				{/*	<OfferPic icon={faMousePointer} />*/}
+				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
+				{/*		Mehr Interaktion durch kreative Formate*/}
+				{/*	</Typography>*/}
+				{/*</Box>*/}
+				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
+				{/*	<OfferPic icon={faUsers} />*/}
+				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
+				{/*		Mehr Neukunden durch gezielte und kreative Werbung*/}
+				{/*	</Typography>*/}
+				{/*</Box>*/}
+				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
+				{/*	<OfferPic icon={faBusinessTime} />*/}
+				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
+				{/*		Sie erhalten mehr Zeit für Ihr Business*/}
+				{/*	</Typography>*/}
+				{/*</Box>*/}
 			</Box>
 		</section>
 	);

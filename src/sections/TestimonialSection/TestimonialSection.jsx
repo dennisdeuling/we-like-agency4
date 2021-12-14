@@ -45,8 +45,8 @@ const useStyles = makeStyles({
 	}
 });
 
-function TestimonialSection() {
-	const [testimonials, setTestimonials] = useState(data);
+function TestimonialSection({ ...props }) {
+	const [testimonials, setTestimonials] = useState(props.content.testimonials);
 	const [activePerson, setActivePerson] = useState(0);
 	const classes = useStyles();
 
@@ -66,10 +66,11 @@ function TestimonialSection() {
 		}
 	};
 
+	console.log(props);
 	return (
 		<section>
 			<Typography id="kundenmeinung" variant="h1" align="center">
-				Dass sagen meine Kunden:
+				{props.content.title}
 			</Typography>
 			<Box>
 				<Box display="flex" justifyContent="center" alignItems="center">
@@ -86,8 +87,15 @@ function TestimonialSection() {
 					/>
 				</Box>
 				<Box display="flex" justifyContent="center">
+					<Typography
+						className={classes.text}
+						variant="subtitle1"
+						dangerouslySetInnerHTML={{ __html: testimonials[activePerson].text }}
+					/>
+				</Box>
+				<Box display="flex" justifyContent="center">
 					<Typography className={classes.text} variant="subtitle1">
-						{testimonials[activePerson].text}
+						{testimonials[activePerson].name}
 					</Typography>
 				</Box>
 				<Box display="flex" justifyContent="center">

@@ -13,6 +13,8 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import { Link } from 'react-scroll';
+
 import Logo from '../../assets/images/Logo.jpg';
 
 const pages = ['welikeagency', 'Vorteile', 'Leistung', 'Kundenmeinung', 'Projekte', 'Kontakt'];
@@ -41,13 +43,22 @@ const Navbar = () => {
 						sx={{ flexGrow: 1, justifyContent: 'flex-end', display: { xs: 'none', md: 'flex' } }}
 					>
 						{pages.map(page => (
-							<Button
-								key={page}
-								onClick={handleCloseNavMenu}
-								sx={{ my: 2, color: 'white', display: 'block' }}
+							<Link
+								activeClass="active"
+								to={`${page.toLowerCase()}`}
+								spy={true}
+								smooth={true}
+								duration={3000}
+								offset={-30}
 							>
-								{page}
-							</Button>
+								<Button
+									key={page}
+									onClick={handleCloseNavMenu}
+									sx={{ my: 2, color: 'white', display: 'block' }}
+								>
+									{page}
+								</Button>
+							</Link>
 						))}
 					</Box>
 					<Box
@@ -90,14 +101,23 @@ const Navbar = () => {
 									onClick={handleCloseNavMenu}
 									style={{ justifyContent: 'center' }}
 								>
-									<Typography
-										component="a"
-										textAlign="center"
-										href={`#${page.toLowerCase()}`}
-										sx={{ textDecoration: 'none', color: 'black' }}
+									<Link
+										activeClass="active"
+										to={`${page.toLowerCase()}`}
+										spy={true}
+										smooth={true}
+										duration={3000}
+										offset={-30}
 									>
-										{page}
-									</Typography>
+										<Typography
+											component="a"
+											textAlign="center"
+											sx={{ textDecoration: 'none', color: 'black' }}
+											onClick={handleCloseNavMenu}
+										>
+											{page}
+										</Typography>
+									</Link>
 								</MenuItem>
 							))}
 						</Menu>
