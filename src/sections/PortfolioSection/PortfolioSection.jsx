@@ -1,5 +1,7 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
+import { Link } from 'react-scroll';
+
 import CustomCard from '../../components/CustomCard';
 import CustomButton from '../../components/CustomButton';
 
@@ -14,7 +16,9 @@ function PortfolioSection() {
 				<CustomCard />
 				<CustomCard />
 			</Box>
-			<CustomButton anker="kontakt" text="Jetzt anfragen" />
+			<Link activeClass="active" to="kontakt" spy={true} smooth={true} duration={3000} offset={-30}>
+				<CustomButton anker="kontakt" text="Jetzt anfragen" />
+			</Link>
 		</section>
 	);
 }

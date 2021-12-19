@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Box, CardMedia, CardContent, Card } from '@mui/material';
+import { Link } from 'react-scroll';
 import CustomButton from '../../components/CustomButton';
 import { makeStyles } from '@mui/styles';
 
@@ -36,7 +37,9 @@ function SolutionSection({ ...props }) {
 					);
 				})}
 			</Box>
-			<CustomButton anker="kontakt" text="Jetzt anfragen" />
+			<Link activeClass="active" to="kontakt" spy={true} smooth={true} duration={3000} offset={-30}>
+				<CustomButton anker="kontakt" text="Jetzt anfragen" />
+			</Link>
 		</section>
 	);
 }

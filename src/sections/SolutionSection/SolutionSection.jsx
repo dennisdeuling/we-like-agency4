@@ -44,42 +44,6 @@ function OfferSection({ ...props }) {
 						</Box>
 					);
 				})}
-				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
-				{/*	<OfferPic icon={faCoins} />*/}
-				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
-				{/*		Mehr Umsatz durch eine klare Strategie*/}
-				{/*	</Typography>*/}
-				{/*</Box>*/}
-				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
-				{/*	<OfferPic icon={faEye} />*/}
-				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
-				{/*		Mehr Sichtbarkeit durch visuelles Branding*/}
-				{/*	</Typography>*/}
-				{/*</Box>*/}
-				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
-				{/*	<OfferPic icon={faChartLine} />*/}
-				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
-				{/*		Mehr Traffic durch relevante Inhalte*/}
-				{/*	</Typography>*/}
-				{/*</Box>*/}
-				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
-				{/*	<OfferPic icon={faMousePointer} />*/}
-				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
-				{/*		Mehr Interaktion durch kreative Formate*/}
-				{/*	</Typography>*/}
-				{/*</Box>*/}
-				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
-				{/*	<OfferPic icon={faUsers} />*/}
-				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
-				{/*		Mehr Neukunden durch gezielte und kreative Werbung*/}
-				{/*	</Typography>*/}
-				{/*</Box>*/}
-				{/*<Box display="flex" flexWrap="wrap" justifyContent="center" style={{ width: '400px' }}>*/}
-				{/*	<OfferPic icon={faBusinessTime} />*/}
-				{/*	<Typography className={classes.subhead} variant="h3" align="center">*/}
-				{/*		Sie erhalten mehr Zeit für Ihr Business*/}
-				{/*	</Typography>*/}
-				{/*</Box>*/}
 			</Box>
 		</section>
 	);
