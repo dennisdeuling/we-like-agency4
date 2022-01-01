@@ -19,7 +19,6 @@ const useStyles = makeStyles({
 	},
 	text: {
 		width: '80%',
-		// height: '100px',
 		textAlign: 'center'
 	},
 	caret: {
