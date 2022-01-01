@@ -29,7 +29,7 @@ function ContactSection() {
 	const handleSubmit = event => {
 		event.preventDefault();
 		axios
-			.post(`${process.env.REACT_APP_BACKEND}/mail`, { input })
+			.post(`${process.env.REACT_APP_BACKEND_DOMAIN}/mail`, { input })
 			.then(response => setSendEmailSuccess(true))
 			.catch(error => setSendEmailSuccess(false));
 	};

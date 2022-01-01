@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, TextField, Box, Button, Alert, Grid } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import Logo from '../../assets/images/Logo.jpg';
 import Disclaimer from '../Disclaimer/Disclaimer';
@@ -39,7 +39,7 @@ function Footer() {
 						md={12}
 						lg={12}
 					>
-						<img className={classes.logo} src={Logo} />
+						<img className={classes.logo} src={Logo} alt="we-like-agency Logo" />
 					</Grid>
 					<Grid
 						item
@@ -93,7 +93,6 @@ function Footer() {
 							Telefon: 030 / 123456
 						</a>
 					</Grid>
-					{/*</Grid>*/}
 				</div>
 			</Grid>
 			<Disclaimer />

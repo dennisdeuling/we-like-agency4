@@ -27,7 +27,7 @@ function WeLikeAgencySection({ ...props }) {
 					</Typography>
 				</Grid>
 				<Grid item xs={12} md={6} lg={6} alignSelf="flex-start">
-					<img className={classes.image} src={image} />
+					<img className={classes.image} src={image} alt={image} />
 				</Grid>
 				<Grid item xs={12} md={6} lg={6}>
 					<Typography

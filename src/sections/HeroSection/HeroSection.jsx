@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typography, Box } from '@mui/material';
 import { Link } from 'react-scroll';
 
@@ -6,11 +6,13 @@ import CustomButton from '../../components/CustomButton';
 
 function HeroSection({ ...props }) {
 	const { title, image, subtitle } = props.content;
+
 	return (
 		<section>
 			<div
 				style={{
-					height: '850px',
+					minWidth: '100%',
+					minHeight: 'auto',
 					backgroundImage: `url(${image})`,
 					backgroundRepeat: 'no-repeat',
 					backgroundSize: 'cover'
@@ -19,6 +21,7 @@ function HeroSection({ ...props }) {
 				<Box
 					display="flex"
 					style={{ height: '850px' }}
+					// style={{ minWidth: '100%', minHeight: '100%' }}
 					justifyContent="flex-end"
 					alignItems="center"
 				>

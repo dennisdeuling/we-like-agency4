@@ -12,7 +12,6 @@ import TestimonialSection from './sections/TestimonialSection/TestimonialSection
 import PortfolioSection from './sections/PortfolioSection/PortfolioSection';
 import ContactSection from './sections/ContactSection/ContactSection';
 import Footer from './sections/Footer/Footer';
-import Impressum from './sections/Impressum/Impressum';
 
 import { content } from './content';
 
@@ -32,9 +31,6 @@ function App() {
 						<PortfolioSection content={content.portfolio} />
 						<ContactSection />
 						<Footer />
-					</Route>
-					<Route path="/impressum">
-						<Impressum />
 					</Route>
 				</Switch>
 			</ThemeProvider>

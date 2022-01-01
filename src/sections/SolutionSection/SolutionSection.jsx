@@ -1,13 +1,5 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
-import {
-	faBusinessTime,
-	faEye,
-	faChartLine,
-	faCoins,
-	faUsers,
-	faMousePointer
-} from '@fortawesome/free-solid-svg-icons';
 import OfferPic from '../../components/OfferPic';
 import { makeStyles } from '@mui/styles';
 

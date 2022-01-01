@@ -2,39 +2,24 @@ import React, { useState } from 'react';
 import { Typography, Box } from '@mui/material';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
-import Dummy from '../../assets/images/dummy.png';
 import { makeStyles } from '@mui/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-const data = [
-	{
-		name: 'Max Mustermann',
-		text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur tridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.',
-		position: 'Position',
-		image: Dummy
-	},
-	{
-		name: 'Max Mustermann',
-		text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur tridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.',
-		position: 'Position',
-		image: Dummy
-	},
-	{
-		name: 'Max Mustermann',
-		text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur tridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.',
-		position: 'Position',
-		image: Dummy
-	}
-];
 
 const useStyles = makeStyles({
 	image: {
 		borderRadius: '50%',
-		maxWidth: '60%',
+		maxWidth: '100px',
 		margin: '1em 0em 2em 0em'
+	},
+	section: {
+		height: '400px'
+	},
+	slider: {
+		height: '150px'
 	},
 	text: {
 		width: '80%',
+		// height: '100px',
 		textAlign: 'center'
 	},
 	caret: {
@@ -66,20 +51,23 @@ function TestimonialSection({ ...props }) {
 		}
 	};
 
-	console.log(props);
 	return (
 		<section>
 			<Typography id="kundenmeinung" variant="h1" align="center">
 				{props.content.title}
 			</Typography>
-			<Box>
-				<Box display="flex" justifyContent="center" alignItems="center">
+			<Box className={classes.section}>
+				<Box display="flex" justifyContent="center" alignItems="center" className={classes.slider}>
 					<FontAwesomeIcon
 						className={classes.caret}
 						icon={faCaretLeft}
 						onClick={() => handleClickLeft()}
 					/>
-					<img className={classes.image} src={testimonials[activePerson].image} />
+					<img
+						className={classes.image}
+						src={testimonials[activePerson].image}
+						alt={testimonials[activePerson].name}
+					/>
 					<FontAwesomeIcon
 						className={classes.caret}
 						icon={faCaretRight}

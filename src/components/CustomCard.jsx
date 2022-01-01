@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
-import CardImage from '../assets/images/dummy.png';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
@@ -13,8 +12,6 @@ const useStyles = makeStyles({
 });
 function CustomCard({ ...props }) {
 	const classes = useStyles();
-
-	console.log(props);
 
 	return (
 		<Card sx={{ maxWidth: 345 }}>
