@@ -1,5 +1,7 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
+import { content } from '../../content';
+const { name, street, zipcode, city, telephone, email } = content.personalData;
 
 const style = {
 	position: 'absolute',
@@ -20,25 +22,25 @@ function Impressum() {
 				<Typography variant="h1">Impressum</Typography>
 				<Typography variant="h2">Angaben gemäß § 5 TMG</Typography>
 				<Typography variant="p">
-					Tamara Fritsch
+					{name}
 					<br />
-					Welikeagency
+					WeLike Agency
 					<br />
-					[Straße]
+					{street}
 					<br />
-					[Postleitzahl] [Ort]
+					{`${zipcode} ${city}`}
 				</Typography>
 				<br />
 				<Typography variant="p">
-					Telefon: [Telefonnummer]
+					{`Telefon: ${telephone}`}
 					<br />
-					E-Mail: [E-Mail-Adresse]
+					{`E - Mail: ${email}`}
 				</Typography>
+				<br />
 				<br />
 				<Typography variant="h2">
-					Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
+					Verbraucherstreitbeilegung / Universalschlichtungsstelle
 				</Typography>
-				<br />
 				<Typography variant="p">
 					Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
 					Verbraucherschlichtungsstelle teilzunehmen.

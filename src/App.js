@@ -30,7 +30,7 @@ function App() {
 						<TestimonialSection content={content.testimonials} />
 						<PortfolioSection content={content.portfolio} />
 						<ContactSection />
-						<Footer />
+						<Footer content={content.personalData} />
 					</Route>
 				</Switch>
 			</ThemeProvider>

@@ -125,5 +125,13 @@ export const content = {
 			title: 'Leistung 3',
 			text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate'
 		}
-	]
+	],
+	personalData: {
+		name: 'Tamara Fritsch',
+		street: 'Husemannstraße 9',
+		zipcode: '10435',
+		city: 'Berlin',
+		telephone: '0157/85610365',
+		email: 'musteremail@muster.de'
+	}
 };

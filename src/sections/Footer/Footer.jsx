@@ -24,8 +24,10 @@ const useStyles = makeStyles({
 		color: 'black'
 	}
 });
-function Footer() {
+function Footer({ ...props }) {
+	const { name, street, city, zipcode, telephone } = props.content;
 	const classes = useStyles();
+
 	return (
 		<footer className={classes.background}>
 			<Grid container display="flex" justifyContent="center" alignItems="center">
@@ -51,7 +53,7 @@ function Footer() {
 						lg={12}
 					>
 						<Typography className={classes.text} variant="h3">
-							Tamara Fritsch
+							{name}
 						</Typography>
 					</Grid>
 					<Grid
@@ -64,7 +66,7 @@ function Footer() {
 						lg={12}
 					>
 						<Typography className={classes.text} variant="h3">
-							Musterstraße 12
+							{street}
 						</Typography>
 					</Grid>
 					<Grid
@@ -77,7 +79,7 @@ function Footer() {
 						lg={12}
 					>
 						<Typography className={classes.text} variant="h3">
-							12345 Berlin
+							{`${zipcode} ${city}`}
 						</Typography>
 					</Grid>
 					<Grid
@@ -89,8 +91,8 @@ function Footer() {
 						md={12}
 						lg={12}
 					>
-						<a className={classes.link} href="tel:030123456">
-							Telefon: 030 / 123456
+						<a className={classes.link} href={`tel:${telephone.replace('/', '')}`}>
+							{`Telefon: ${telephone.replace('/', ' / ')}`}
 						</a>
 					</Grid>
 				</div>
