@@ -1,7 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './ThemeOptions';
-import { Route, Switch } from 'react-router-dom';
 import Navbar from './sections/Navbar/Navbar';
 import HeroSection from './sections/HeroSection/HeroSection';
 import WeLikeAgency from './sections/WeLikeAgencySection/WeLikeAgencySection';
@@ -19,20 +18,16 @@ function App() {
 	return (
 		<React.Fragment>
 			<ThemeProvider theme={theme}>
-				<Switch>
-					<Route exact path="/">
-						<Navbar />
-						<HeroSection content={content.heroSection} />
-						<WeLikeAgency content={content.welikeagencySection} />
-						<SolutionSection content={content.solutionSection} />
-						<CompanyLogoSection content={content.welikeagencySection} />
-						<OfferSection content={content.offerSection} />
-						<TestimonialSection content={content.testimonials} />
-						<PortfolioSection content={content.portfolio} />
-						<ContactSection />
-						<Footer content={content.personalData} />
-					</Route>
-				</Switch>
+				<Navbar />
+				<HeroSection content={content.heroSection} />
+				<WeLikeAgency content={content.welikeagencySection} />
+				<SolutionSection content={content.solutionSection} />
+				<CompanyLogoSection content={content.welikeagencySection} />
+				<OfferSection content={content.offerSection} />
+				<TestimonialSection content={content.testimonials} />
+				<PortfolioSection content={content.portfolio} />
+				<ContactSection />
+				<Footer content={content.personalData} />
 			</ThemeProvider>
 		</React.Fragment>
 	);
