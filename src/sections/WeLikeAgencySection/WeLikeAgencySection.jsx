@@ -43,7 +43,7 @@ function WeLikeAgencySection({ ...props }) {
 						duration={3000}
 						offset={-30}
 					>
-						<CustomButton anker="kontakt" text="Jetzt Kontakt aufnehmen" />
+						<CustomButton anker="kontakt" text="Jetzt Kontakt aufnehmen" type="button" />
 					</Link>
 				</Grid>
 			</Grid>

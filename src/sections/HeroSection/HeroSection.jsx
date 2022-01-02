@@ -36,7 +36,7 @@ function HeroSection({ ...props }) {
 							duration={3000}
 							offset={-30}
 						>
-							<CustomButton anker="leistung" text="Meine Leistung" />
+							<CustomButton anker="leistung" text="Meine Leistung" type="button" />
 						</Link>
 					</Box>
 				</Box>

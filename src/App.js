@@ -25,7 +25,7 @@ function App() {
 				<CompanyLogoSection content={content.welikeagencySection} />
 				<OfferSection content={content.offerSection} />
 				<TestimonialSection content={content.testimonials} />
-				<PortfolioSection content={content.portfolio} />
+				{/*<PortfolioSection content={content.portfolio} />*/}
 				<ContactSection />
 				<Footer content={content.personalData} />
 			</ThemeProvider>

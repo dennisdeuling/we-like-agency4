@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Typography, TextField, Box, Button, Alert } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import axios from 'axios';
+import CustomButton from '../../components/CustomButton';
 
 const useStyles = makeStyles({
 	textField: {
@@ -77,16 +78,17 @@ function ContactSection() {
 							onChange={event => handleInput(event)}
 						/>
 
-						<Button
-							variant="contained"
-							color="primary"
-							aria-label="Jetzt absenden"
-							size="large"
-							align="center"
-							type="submit"
-						>
-							Jetzt absenden
-						</Button>
+						<CustomButton text="Jetzt absenden" type="submit" />
+						{/*<Button*/}
+						{/*	variant="contained"*/}
+						{/*	color="primary"*/}
+						{/*	aria-label="Jetzt absenden"*/}
+						{/*	size="large"*/}
+						{/*	align="center"*/}
+						{/*	type="submit"*/}
+						{/*>*/}
+						{/*	Jetzt absenden*/}
+						{/*</Button>*/}
 					</Box>
 				</form>
 			)}

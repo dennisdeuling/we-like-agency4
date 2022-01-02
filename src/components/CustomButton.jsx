@@ -10,23 +10,44 @@ const useStyles = makeStyles({
 		margin: '15px'
 	}
 });
-function CustomButton({ anker, text }) {
+function CustomButton({ anker, text, type }) {
 	const classes = useStyles();
-	return (
-		<Box display="flex" justifyContent="center">
-			<Button
-				className={classes.root}
-				variant="contained"
-				color="primary"
-				href={`#${anker}`}
-				aria-label={text}
-				size="large"
-				align="center"
-			>
-				{text}
-			</Button>
-		</Box>
-	);
+
+	switch (type) {
+		case 'button':
+			return (
+				<Box display="flex" justifyContent="center">
+					<Button
+						className={classes.root}
+						variant="contained"
+						color="primary"
+						href={`#${anker}`}
+						aria-label={text}
+						size="large"
+						align="center"
+						type="button"
+					>
+						{text}
+					</Button>
+				</Box>
+			);
+		case 'submit':
+			return (
+				<Box display="flex" justifyContent="center">
+					<Button
+						className={classes.root}
+						variant="contained"
+						color="primary"
+						aria-label={text}
+						size="large"
+						align="center"
+						type="submit"
+					>
+						{text}
+					</Button>
+				</Box>
+			);
+	}
 }
 
 export default CustomButton;

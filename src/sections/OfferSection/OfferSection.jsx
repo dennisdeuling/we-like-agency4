@@ -38,7 +38,7 @@ function SolutionSection({ ...props }) {
 				})}
 			</Box>
 			<Link activeClass="active" to="kontakt" spy={true} smooth={true} duration={3000} offset={-30}>
-				<CustomButton anker="kontakt" text="Jetzt anfragen" />
+				<CustomButton anker="kontakt" text="Jetzt anfragen" type="button" />
 			</Link>
 		</section>
 	);
