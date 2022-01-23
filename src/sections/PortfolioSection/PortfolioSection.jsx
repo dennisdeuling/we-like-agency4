@@ -8,7 +8,8 @@ import CustomCard from '../../components/CustomCard';
 
 const useStyles = makeStyles({
 	sectionHeadline: {
-		marginTop: '150px'
+		marginTop: '150px',
+		paddingTop: '150px'
 	},
 	cardHeadline: {
 		color: '#f8cb6d'

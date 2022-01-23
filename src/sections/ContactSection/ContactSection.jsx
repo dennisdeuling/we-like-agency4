@@ -10,7 +10,7 @@ const useStyles = makeStyles({
 		margin: '0px 20px 10px 20px'
 	},
 	alert: {
-		fontFamily: 'Dosis',
+		fontFamily: 'Open Sans, sans-serif',
 		fontSize: '1em',
 		margin: '0px 10px 0px 10px'
 	},
