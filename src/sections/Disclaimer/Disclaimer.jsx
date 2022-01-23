@@ -26,11 +26,6 @@ function Disclaimer() {
 	return (
 		<div className={classes.background}>
 			<Grid display="flex" justifyContent="center" alignItems="center">
-				{/*<Link to="/impressum">*/}
-				{/*	<Typography className={classes.text} variant="p">*/}
-				{/*		IMPRESSUM*/}
-				{/*	</Typography>*/}
-				{/*</Link>*/}
 				<Button onClick={handleOpen}>Impressum</Button>
 				<Modal
 					open={open}
@@ -38,7 +33,7 @@ function Disclaimer() {
 					aria-labelledby="modal-modal-title"
 					aria-describedby="modal-modal-description"
 				>
-					<Impressum />
+					<Impressum close={handleClose} />
 				</Modal>
 			</Grid>
 		</div>

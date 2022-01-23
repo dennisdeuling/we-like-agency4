@@ -4,10 +4,11 @@ import contentMarketing from './assets/images/content-marketing.jpg';
 import coaching from './assets/images/coaching.jpg';
 import kampagnen from './assets/images/kampagnen.jpg';
 import socialMedia from './assets/images/social-media.jpg';
+import kampagne from './assets/images/kampagne.png';
+import allSocialMedia from './assets/images/all-social-media.jpg';
 
 // Logos
 import bjoernBucheck from './assets/images/bjoern-buschek.png';
-import soberSensationLogo from './assets/images/sober-sensation.png';
 import soberSensationIcon from './assets/images/sober-sensation-icon.png';
 import liveCookingAgency from './assets/images/live-cooking-agency.jpeg';
 
@@ -111,19 +112,14 @@ export const content = {
 	},
 	portfolio: [
 		{
-			image: '',
+			image: allSocialMedia,
 			title: 'Social Media - Instagram',
-			text: '<p>Ausarbeitung einer Live-Cooking/Content-Strategie zusammen mit Schauspielerin und Moderatorin Kelly Heelton. Das Ziel, ansprechende und unterhaltende Inhalte für Social Media zu produzieren, den Traffic steigen, die Bekanntheit erhöhen und einen positiven Impact für die Community leisten.</p>'
+			text: '<p>Ausarbeitung einer Live-Cooking/Content-Strategie zusammen mit Schauspielerin und Moderatorin Kelly Heelton. Das Ziel, ansprechende und unterhaltende Inhalte für Social Media zu produzieren, den Traffic steigen, die Bekanntheit erhöhen und einen positiven Impact für die Community leisten. <br /><a href="https://www.instagram.com/tv/CATGBwoo8LQ/?utm_source=ig_web_copy_link">Hier gehts zum Content.</a></p>'
 		},
 		{
-			image: '',
+			image: kampagne,
 			title: 'Kampagne',
-			text: '<p><strong>Aufgabe/Herausforderung:</strong></p><p>Jede dritte Frau in Deutschland wird in ihrem Leben Opfer physischer oder sexualisierter Gewalt. Bei jeder vierten Frau ist der T&auml;ter der aktuelle Partner oder ein fr&uuml;herer Partner. Auf das Jahr gerechnet wird in Deutschland fast t&auml;glich eine Frau von ihrem Partner oder Ex-Partner ermordet.&nbsp;</p>p>Auch die seit Fr&uuml;hjahr 2020 grassierende Corona-Pandemie wirkt sich auf die Sicherheit von Frauen und Kindern im h&auml;uslichen Umfeld aus. Laut Berichten von Frauenh&auml;usern, Beratungsstellen und Hilfetelefonen nimmt h&auml;usliche Gewalt seit der ersten Phase der coronabedingten Einschr&auml;nkungen des &ouml;ffentlichen Lebens stetig zu.</p><p><strong>L&ouml;sung:&nbsp;</strong></p><p>Mit einer politischen Veranstaltung im September 2021 als Content Strategie und &uuml;ber Social-Media-Kan&auml;le um auf das Thema aufmerksam zu machen. Unsere Aufgabe war es, die Mitausarbeitung der Content-Strategie, der K&uuml;nstlerakquise und neben namhaften K&uuml;nstlern wie <a href="https://www.instagram.com/mulaymusic/" target="_blank">Mulay</a>, Kartini oder Fin-G gab es auch politische Redebeitr&auml;ge von <a href="https://twitter.com/rathaus_keller" target="_blank">Christoph Keller (Die Linke)</a>, <a href="https://twitter.com/KurtTaylanz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Taylan Kurt</span></a> (B&uuml;ndnis 90/Die Gr&uuml;nen) und Anab Awale (SPD). Moderiert hat das Rahmenprogramm <a href="https://www.instagram.com/karakayatalks/" target="_blank">Esra Karakaya.</a></p><p><strong>Das Ergebnis</strong></p><p>Die politische Veranstaltung fand im September 2021 vor den Wahlen statt und konnte sowohl besucht werden als auch &uuml;ber die Social Media Beitr&auml;ge verfolgt werden. Es gab viele Kommentare von der Community, die mit dem Content agiert haben.</p>'
-		},
-		{
-			image: '',
-			title: 'Leistung 3',
-			text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate'
+			text: '<p><strong>Aufgabe/Herausforderung:</strong></p><p>Jede dritte Frau in Deutschland wird in ihrem Leben Opfer physischer oder sexualisierter Gewalt. Bei jeder vierten Frau ist der T&auml;ter der aktuelle Partner oder ein fr&uuml;herer Partner. Auf das Jahr gerechnet wird in Deutschland fast t&auml;glich eine Frau von ihrem Partner oder Ex-Partner ermordet.&nbsp;</p><p>Auch die seit Fr&uuml;hjahr 2020 grassierende Corona-Pandemie wirkt sich auf die Sicherheit von Frauen und Kindern im h&auml;uslichen Umfeld aus. Laut Berichten von Frauenh&auml;usern, Beratungsstellen und Hilfetelefonen nimmt h&auml;usliche Gewalt seit der ersten Phase der coronabedingten Einschr&auml;nkungen des &ouml;ffentlichen Lebens stetig zu.</p><p><strong>L&ouml;sung:&nbsp;</strong></p><p>Mit einer politischen Veranstaltung im September 2021 als Content Strategie und &uuml;ber Social-Media-Kan&auml;le um auf das Thema aufmerksam zu machen. Unsere Aufgabe war es, die Mitausarbeitung der Content-Strategie, der K&uuml;nstlerakquise und neben namhaften K&uuml;nstlern wie <a href="https://www.instagram.com/mulaymusic/" target="_blank">Mulay</a>, Kartini oder Fin-G gab es auch politische Redebeitr&auml;ge von <a href="https://twitter.com/rathaus_keller" target="_blank">Christoph Keller (Die Linke)</a>, <a href="https://twitter.com/KurtTaylanz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Taylan Kurt</span></a> (B&uuml;ndnis 90/Die Gr&uuml;nen) und Anab Awale (SPD). Moderiert hat das Rahmenprogramm <a href="https://www.instagram.com/karakayatalks/" target="_blank">Esra Karakaya.</a></p><p><strong>Das Ergebnis</strong></p><p>Die politische Veranstaltung fand im September 2021 vor den Wahlen statt und konnte sowohl besucht werden als auch &uuml;ber die Social Media Beitr&auml;ge verfolgt werden. Es gab viele Kommentare von der Community, die mit dem Content agiert haben.</p>'
 		}
 	],
 	personalData: {

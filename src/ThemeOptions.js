@@ -15,57 +15,55 @@ const theme = createTheme({
 	},
 	typography: {
 		h1: {
-			fontFamily: 'Vidaloka',
+			fontFamily: 'Heebo, sans-serif',
 			fontSize: '2em',
 			color: '#B09CDB',
 			fontWeight: 800,
 			margin: '30px 0px 10px 0px'
 		},
 		h2: {
-			fontFamily: 'Vidaloka',
+			fontFamily: 'Heebo, sans-serif',
 			fontSize: '1.5em'
 		},
 		h3: {
-			fontFamily: 'Vidaloka',
+			fontFamily: 'Heebo, sans-serif',
 			fontSize: '1.5em'
 		},
 		h4: {
-			fontFamily: 'Vidaloka',
+			fontFamily: 'Heebo, sans-serif',
 			fontSize: '1em'
 		},
 		h5: {
-			fontFamily: 'Vidaloka',
+			fontFamily: 'Heebo, sans-serif',
 			fontSize: '1em'
 		},
 		h6: {
-			fontFamily: 'Vidaloka',
+			fontFamily: 'Heebo, sans-serif',
 			fontSize: '1em'
 		},
 		subtitle1: {
-			fontFamily: 'Dosis'
+			fontFamily: 'Open Sans, sans-serif'
 		},
 		subtitle2: {
-			fontFamily: 'Dosis'
+			fontFamily: 'Open Sans, sans-serif'
 		},
 		body1: {
-			fontFamily: 'Dosis',
+			fontFamily: 'Open Sans, sans-serif',
 			fontSize: '1em'
 		},
 		body2: {
-			fontFamily: 'Dosis',
+			fontFamily: 'Open Sans, sans-serif',
 			fontSize: '1em'
 		},
 		button: {
-			fontFamily: 'Fira Sans Extra Condensed'
+			fontFamily: 'Open Sans, sans-serif'
 		},
 		caption: {
-			fontFamily: 'Dosis'
+			fontFamily: 'Open Sans, sans-serif'
 		},
 		overline: {
-			fontFamily: 'Dosis'
+			fontFamily: 'Open Sans, sans-serif'
 		}
-		// fontFamily: 'Fira Sans Extra Condensed',
-		// fontSize: '1.5em'
 	}
 });
 

@@ -13,16 +13,35 @@ const useStyles = makeStyles({
 		fontFamily: 'Dosis',
 		fontSize: '1em',
 		margin: '0px 10px 0px 10px'
+	},
+	inputAlert: {
+		display: 'flex',
+		justifyContent: 'center',
+		width: '60%',
+		margin: '0px 0px 10px 0px'
+	},
+	flex: {
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
+		margin: '20px 0px 0px 0px'
 	}
 });
 
 function ContactSection() {
 	const [input, setInput] = useState({ email: '', message: '' });
+	const [validEmail, setValidEmail] = useState();
 	const [sendEmailSuccess, setSendEmailSuccess] = useState(false);
 	const classes = useStyles();
 
 	const handleInput = event => {
 		const { value, name } = event.target;
+
+		if (name === 'message' && value.length > 5) {
+			const regExEmail =
+				/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			input.email.match(regExEmail) ? setValidEmail(true) : setValidEmail(false);
+		}
 
 		setInput({ ...input, [name]: value });
 	};
@@ -49,6 +68,19 @@ function ContactSection() {
 								<li>Deine Email: {input.email}</li>
 								<li>Deine Nachricht: {input.message}</li>
 							</ul>
+							Wichtig: Deine Daten werden nicht gespeichert und nur an meine Inbox gesendet.
+							<div className={classes.flex}>
+								<Button
+									variant="outlined"
+									onClick={() => {
+										setSendEmailSuccess(false);
+										setInput({ email: '', message: '' });
+										setValidEmail();
+									}}
+								>
+									Nachricht schließen
+								</Button>
+							</div>
 						</Alert>
 					</Box>
 				</React.Fragment>
@@ -67,6 +99,14 @@ function ContactSection() {
 							variant="outlined"
 							onChange={event => handleInput(event)}
 						/>
+						<div className={classes.inputAlert}>
+							{validEmail === true && (
+								<Alert severity="success">Diese E-Mail-Adresse ist valide</Alert>
+							)}
+							{validEmail === false && (
+								<Alert severity="error">Bitte nutze eine valide E-Mail-Adresse</Alert>
+							)}
+						</div>
 
 						<TextField
 							className={classes.textField}
@@ -79,16 +119,6 @@ function ContactSection() {
 						/>
 
 						<CustomButton text="Jetzt absenden" type="submit" />
-						{/*<Button*/}
-						{/*	variant="contained"*/}
-						{/*	color="primary"*/}
-						{/*	aria-label="Jetzt absenden"*/}
-						{/*	size="large"*/}
-						{/*	align="center"*/}
-						{/*	type="submit"*/}
-						{/*>*/}
-						{/*	Jetzt absenden*/}
-						{/*</Button>*/}
 					</Box>
 				</form>
 			)}

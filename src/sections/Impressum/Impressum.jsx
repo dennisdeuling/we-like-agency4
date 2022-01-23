@@ -1,6 +1,8 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 import { content } from '../../content';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 const { name, street, zipcode, city, telephone, email } = content.personalData;
 
 const style = {
@@ -15,10 +17,23 @@ const style = {
 	p: 4
 };
 
-function Impressum() {
+function Impressum({ ...props }) {
+	const closeModal = () => {
+		props.close();
+	};
+
 	return (
 		<React.Fragment>
 			<Box sx={style}>
+				<div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+					<FontAwesomeIcon
+						style={{
+							fontSize: '1em'
+						}}
+						icon={faTimes}
+						onClick={closeModal}
+					/>
+				</div>
 				<Typography variant="h1">Impressum</Typography>
 				<Typography variant="h2">Angaben gemäß § 5 TMG</Typography>
 				<Typography variant="p">
