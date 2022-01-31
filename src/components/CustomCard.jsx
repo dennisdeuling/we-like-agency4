@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 	},
 	space: {
 		margin: '0px 30px 0px 0px',
-		height: '560px'
+		minHeight: '560px'
 	}
 });
 
