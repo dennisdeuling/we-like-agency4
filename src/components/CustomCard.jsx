@@ -21,7 +21,8 @@ const useStyles = makeStyles({
 		color: 'black'
 	},
 	space: {
-		margin: '0px 30px 0px 0px'
+		margin: '0px 30px 0px 0px',
+		height: '560px'
 	}
 });
 
