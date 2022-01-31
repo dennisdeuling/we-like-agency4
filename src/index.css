@@ -13,3 +13,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media only screen and (max-width: 600px) {
+    #projekte {
+        margin-top: 220px
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #projekte {
+        margin-top: 200px
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #projekte {
+        margin-top: 150px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #projekte {
+        margin-top: -90px
+    }
+    #leistung-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #projekte {
+        margin-top: -200px
+    }
+    #leistung-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}

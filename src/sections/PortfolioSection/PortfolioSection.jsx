@@ -16,6 +16,12 @@ const useStyles = makeStyles({
 	},
 	text: {
 		margin: '10px 20px 0px 20px'
+	},
+	box: {
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'baseline',
+		flexWrap: 'wrap'
 	}
 });
 
@@ -29,7 +35,7 @@ function PortfolioSection({ ...props }) {
 			<Typography id="projekte" variant="h1" align="center" className={classes.sectionHeadline}>
 				Meine bisherigen Projekte:
 			</Typography>
-			<Box display="flex" flexWrap="wrap" justifyContent="space-around">
+			<Box className={classes.box}>
 				{portfolio.map(portfolio => {
 					return <CustomCard data={portfolio} />;
 				})}

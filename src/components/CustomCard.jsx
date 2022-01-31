@@ -19,6 +19,9 @@ const useStyles = makeStyles({
 	},
 	button: {
 		color: 'black'
+	},
+	space: {
+		margin: '0px 30px 0px 0px'
 	}
 });
 
@@ -76,7 +79,7 @@ function CustomCard({ ...props }) {
 	};
 
 	return (
-		<Card sx={{ maxWidth: 345 }}>
+		<Card sx={{ maxWidth: 345 }} className={classes.space}>
 			<CardMedia component="img" height="194" image={image} alt={title} />
 			<CardContent>
 				<Typography className={classes.cardHeadline} variant="h3" align="center">

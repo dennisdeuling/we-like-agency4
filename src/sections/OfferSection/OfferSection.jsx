@@ -22,7 +22,7 @@ function SolutionSection({ ...props }) {
 			<Typography id="leistung" variant="h1" align="center">
 				{title}
 			</Typography>
-			<Box display="flex" flexWrap="wrap" justifyContent="space-around">
+			<Box display="flex" flexWrap="wrap" justifyContent="space-around" id="leistung-div">
 				{offers.map(offer => {
 					return (
 						<Card sx={{ maxWidth: 345 }}>
